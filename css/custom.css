@@ -28,6 +28,24 @@ footer {
 	position: relative;
 }
 
+.modal-content iframe {
+	margin: 20px 20px 15px 20px;
+}
+
+.modal-content button.close {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background-color: white;
+	font-size: 28px;
+	width: 30px;
+	opacity: 1;
+	border-radius: 24px;
+	/* ??*/
+	-webkit-border-radius: 24px; 
+	-moz-border-radius: 24px;
+}
+
 .jumbotron {
 	text-align: center;
 	background-image: url('../images/hero-image.jpg');
