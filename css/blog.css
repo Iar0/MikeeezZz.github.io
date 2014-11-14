@@ -302,6 +302,29 @@ h2 {
 }
 
 /*
+ * About
+ */
+#about img {
+  width: 200px;
+  border-radius: 79px;
+  height: auto;
+  margin-bottom: 20px;
+  float: left;
+  margin-right: 30px; 
+}
+
+#about p {
+  clear: left;
+  padding-top: 8px;
+}
+
+#about h1 {
+  color: #e74c3c;
+  font-family: 'Open Sans';
+  font-weight: 300;
+}
+
+/*
  * Footer
  */
 
@@ -315,6 +338,13 @@ h2 {
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
+
+.sticky-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
 
 /* Site-wide styling */
 .center {
