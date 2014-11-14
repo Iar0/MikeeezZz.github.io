@@ -283,6 +283,23 @@ h2 {
   background-color: #d2322d;
 }
 
+/*
+ * Share buttons
+ */
+#share-buttons img {
+  width: 55px;
+  border: 0;
+  box-shadow: 0;
+  display: inline;
+  vertical-align: top; 
+  margin-bottom: 0;
+}
+
+#share-buttons p {
+  font-size: 40px;
+  font-weight: 700;
+
+}
 
 /*
  * Footer
