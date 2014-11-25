@@ -33,24 +33,6 @@
 
   <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
-  <!-- fb sdk -->
-      <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '1588612844684404',
-          xfbml      : true,
-          version    : 'v2.2'
-        });
-      };
-
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-    </script> <!-- /fb sdk -->
 
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
@@ -154,21 +136,14 @@
 
       <footer>
         <div class="container">
-        <!--
+        
           <p><img src="images/one-million-bottom-brand.png" alt="One Million Lines Logo" title="One Million Lines Logo"></p>
         </div>
         <div id="back-to-top">
           <a href="#jumbotron">
             <i class="fa fa-chevron-circle-up fa-3x"></i>
           </a>
-          -->
-          <!-- fb like button -->
-          <div
-            class="fb-like"
-            data-share="true"
-            data-width="450"
-            data-show-faces="true">
-          </div>
+          
 
         </div>
       </footer>
@@ -185,28 +160,6 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script src="js/smoothscroll.js"></script>
-    <!-- jquery -->
-    <script src="js/jquery-1.11.1.js"></script>
-    <!-- fb login -->
-    <script src="js/jquery-fblogin/src/jquery.fblogin.js"></script>
-    <script>
-      // This will login a user with Facebook and return user's public data
-        $.fblogin({
-            fbId: '{1588612844684404}',
-            success: function (data) {
-                console.log('Basic public user data returned by Facebook', data);
-            },
-            error: function (error) {
-                console.log('An error occurred.', error);
-            }
-        });
-    </script>
-    <script src="js/scrollReveal.min.js"></script>
-    <script>
-
-      window.sr = new scrollReveal();
-
-    </script>
 
   </body>
 </html>
