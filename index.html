@@ -185,6 +185,22 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script src="js/smoothscroll.js"></script>
+    <!-- jquery -->
+    <script src="js/jquery-1.11.1.js"></script>
+    <!-- fb login -->
+    <script src="js/jquery-fblogin/src/jquery.fblogin.js"></script>
+    <script>
+      // This will login a user with Facebook and return user's public data
+        $.fblogin({
+            fbId: '{1588612844684404}',
+            success: function (data) {
+                console.log('Basic public user data returned by Facebook', data);
+            },
+            error: function (error) {
+                console.log('An error occurred.', error);
+            }
+        });
+    </script>
     <script src="js/scrollReveal.min.js"></script>
     <script>
 
