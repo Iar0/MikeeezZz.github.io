@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>One Million Lines</title>
+
+    <!--Google arvo font and Font-awesome -->
+    <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+  <!-- fb sdk -->
+  <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1588612844684404',
+          xfbml      : true,
+          version    : 'v2.1'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <script>
+    $('#login').click(function () {
+
+      $.fblogin({
+      fbId: '1588612844684404',
+      success: function (data) {
+          console.log('Basic public user data returned by Facebook', data);
+      },
+      error: function (error) {
+          console.log('An error occurred.', error);
+      }
+    });
+
+    })
+    
+    </script>
+
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div id="prova">
+      <div class="container">
+      <a href="#" id="login"> 
+          <h1>
+              Login with Facebook
+          </h1>
+      </a>
+</div>
+    </div>
+    
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <!-- <script src="js/jquery-1.11.1.js"></script> -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/smoothscroll.js"></script>
+
+    <!-- fb login -->
+    <script src="js/jquery-fblogin/dist/jquery.fblogin.min.js"></script>
+
+  </body>
+</html>
