@@ -25,6 +25,27 @@
     <!-- fb login -->
     <script src="js/jquery-fblogin/dist/jquery.fblogin.min.js"></script>
 
+    <script type="text/javascript">
+    console.log("Questo è un log");
+    $( document ).ready(function() {
+        $('#login').click(function () {
+        console.log( "hai cliccato login!" );
+        $.fblogin({
+      fbId: '1588612844684404',
+      success: function (data) {
+          console.log('Basic public user data returned by Facebook', data);
+      },
+      error: function (error) {
+          console.log('An error occurred.', error);
+      }
+    }); // -fblogin
+      }); // -click
+    }); // -ready
+      
+      
+    
+    </script>
+
 
   </head>
 
@@ -47,32 +68,18 @@
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
     </script>
-
-    <script>
-    $('#login').click(function () {
-
-      $.fblogin({
-      fbId: '1588612844684404',
-      success: function (data) {
-          console.log('Basic public user data returned by Facebook', data);
-      },
-      error: function (error) {
-          console.log('An error occurred.', error);
-      }
-    });
-
-    })
     
-    </script>
+
+    
+
+
 
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div id="prova">
       <div class="container">
-      <a href="#" id="login"> 
-          <h1>
+      <a href="#" id="login">
               Login with Facebook
-          </h1>
       </a>
 </div>
     </div>
@@ -88,8 +95,8 @@
     
     
     <script src="js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
+    <script src="js/ie10-viewport-bug-workaround.js"></script> -->
     <script src="js/smoothscroll.js"></script>
 
     
